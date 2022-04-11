@@ -1,0 +1,34 @@
+header {
+    text-align: center;
+    background: lightblue;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.generateBtn {
+    font-size: 20px;
+}
+
+.movie {
+    display: flex;
+    justify-content: space-around;
+    background: wheat;
+    margin: 10px 0;
+}
+
+.meal {
+    display: flex;
+    justify-content: space-around;
+    background: wheat;
+}
+
+.result {
+    border: solid black;
+    width: 50%;
+}
+
+.movieInfo, .mealInfo {
+    display: flex;
+    justify-content: space-around;
+}
