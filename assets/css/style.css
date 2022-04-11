@@ -42,5 +42,7 @@ h2 {
 
 .title{
     font-family: 'Courgette', cursive;
+    text-align: right;
+    margin-right: 50px;
 
 }
