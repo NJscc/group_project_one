@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Reel Meal</title>
      <!-- Compiled and minified CSS - Materialize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,6 @@
 
     <header>
         <h1>Reel Meal Recommendation</h1>
-        <button class="generateBtn">Randomly generate both</button>
     </header>
           
         <!--Move search and results boxes-->
@@ -44,7 +43,7 @@
                 <div class="resultOne">
                     <h3 class="title">Result</h3>
                     <div class="movieInfo">
-                        <p class="image">Image in here</p>
+                        <img id=movieImage src="" alt="Placeholder for movie image.">
                         <p class="description">Description</p>
                     </div>
                 </div>
@@ -71,12 +70,14 @@
                 <div class="resultOne">
                     <h3 class="title">Result</h3>
                     <div class="mealInfo">
-                        <p class="image">Image in here</p>
+                        <img id= recipeImage src="" alt="Placeholder for recipe image.">
                         <p class="description">Description</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <button class="generateBtn">Randomly generate both</button>
     
 
     </main>
