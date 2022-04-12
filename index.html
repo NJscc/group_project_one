@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Courgette&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
          
@@ -22,7 +24,9 @@
     <main>
 
     <header>
-        <h1>Reel Meal Recommendation</h1>
+        <i class="fa-solid fa-video" id="icon"></i>
+        <h1 class="headerTile">Reel Meal Recommendation</h1>
+        <i class="fa-solid fa-utensils" id="icon"></i>
     </header>
           
         <!--Move search and results boxes-->
@@ -42,10 +46,12 @@
             <!--Movie result box-->
             <div class="result">
                 <div class="resultOne">
-                    <h3 class="title">Result</h3>
+                    <img id='movieImage' src="" alt="Placeholder for movie image.">
                     <div class="movieInfo">
-                        <img id='movieImage' src="" alt="Placeholder for movie image.">
-                        <p class="description">Description</p>
+                        <h3 class="title">Result</h3>
+                        <p class="description">
+                            Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ratione cum nesciunt, dignissimos dicta odit
+                        </p>
                     </div>
                 </div>
             </div>
@@ -70,16 +76,18 @@
             <!--Meal result box-->
             <div class="result">
                 <div class="resultOne">
-                    <h3 class="title">Result</h3>
+                    <img id='recipeImage' src="" alt="Placeholder for recipe image.">
                     <div class="mealInfo">
-                        <img id='recipeImage' src="" alt="Placeholder for recipe image.">
-                        <p class="description">Description</p>
+                        <h3 class="title">Result</h3>
+                        <p class="description">
+                            Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ratione cum nesciunt, dignissimos dicta odit
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button class="generateBtn">Randomly generate both</button>
+        <button class="generateBtn">Not sure? Let us give you some ideas!</button>
     
 
     </main>
