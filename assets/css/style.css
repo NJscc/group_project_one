@@ -5,9 +5,12 @@ header {
     margin-bottom: 10px;
     padding: 20px;
     font-family: 'DM Serif Display', serif;
+    background: linear-gradient(120deg,#00FF13,#83FF00,#00FF81,#00FFB6);
+    text-shadow: 4px 2px rgba(0,0,0,0.4);
 
 }
 
+/*Button to randomly generate both search fields*/
 .generateBtn {
     display: flex;
     font-size: 20px;
@@ -22,6 +25,7 @@ header {
     background: wheat;
 }
 
+/* class applies to div containing the movie search and result boxes */
 .movie {
     display: flex;
     justify-content: space-around;
@@ -29,18 +33,21 @@ header {
     /*background: wheat;*/
 }
 
+/* class applies to div containing the meal search and result boxes */
 .meal {
     display: flex;
     justify-content: space-around;
     /*background: wheat;*/
 }
 
+/*Affects styling of both search boxes*/
 .search {
     background-color:wheat;
     display: flex;
     width: 25%;
 }
 
+/*Affects styling of both result boxes*/
 .result {
     border: solid black;
     width: 70%;
@@ -53,13 +60,52 @@ header {
 
 }
 
+/*Affects search box titles*/
 h2 {
     font-family: 'Cinzel', serif;
+    font-size: 25pt;
+    margin: auto 10px;
+    text-align: center;
+    width: 30%;
 }
 
 .title{
     font-family: 'Courgette', cursive;
     text-align: right;
     margin-right: 50px;
+
+}
+
+/*affects styling of dropdown placeholder elements */
+.dropDownBox {
+    margin: auto 0;
+    width: 30%;
+    margin: auto 5px;
+}
+
+/*Affects styling of element currently as placeholder for dropdown menu*/
+
+.searchBtn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 1% 1%;
+}
+
+.submitSearch {
+    width: 100%;
+    height: 45%;
+    margin: 2% 15px;
+    flex-grow: 1;
+
+}
+
+.randomSearch {
+    width: 100%;
+    height: 45%;
+    margin: 2% 15px;
+    flex-grow: 1;
 
 }
