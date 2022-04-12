@@ -109,3 +109,50 @@ h2 {
     flex-grow: 1;
 
 }
+
+/*formatting for search result boxes*/
+/*movieImage, recipeImage, h3, description class*/
+.resultOne {
+    display: flex;
+    flex-direction: row;
+}
+
+.movieImage {
+    display: flex;
+    width: 30%;
+}
+
+.recipeImage {
+    display: flex;
+    width: 30%;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.mealInfo {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.description {
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
