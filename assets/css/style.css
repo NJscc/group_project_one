@@ -13,19 +13,26 @@ header {
 .movie {
     display: flex;
     justify-content: space-around;
-    background: wheat;
     margin: 10px 0;
+    /*background: wheat;*/
 }
 
 .meal {
     display: flex;
     justify-content: space-around;
-    background: wheat;
+    /*background: wheat;*/
+}
+
+.search {
+    background-color:wheat;
+    display: flex;
+    width: 38%;
 }
 
 .result {
     border: solid black;
     width: 50%;
+    background: wheat;
 }
 
 .movieInfo, .mealInfo {
