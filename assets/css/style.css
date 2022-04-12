@@ -54,6 +54,9 @@ header {
 
 h2 {
     font-family: 'Cinzel', serif;
+    font-size: 28pt;
+    margin: auto 10px;
+    text-align: center;
 }
 
 .title{
