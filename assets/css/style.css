@@ -7,7 +7,16 @@ header {
     font-family: 'DM Serif Display', serif;
     background: linear-gradient(120deg,#00FF13,#83FF00,#00FF81,#00FFB6);
     text-shadow: 4px 2px rgba(0,0,0,0.4);
-
+    display: flex;
+    justify-content: center;
+}
+.headerTile {
+    margin-left: 30px;
+    margin-right: 25px;
+}
+#icon {
+    font-size: 90px;
+    margin-top: 20px;
 }
 
 /*Button to randomly generate both search fields*/
@@ -45,6 +54,7 @@ header {
     background-color:wheat;
     display: flex;
     width: 25%;
+
 }
 
 /*Affects styling of both result boxes*/
