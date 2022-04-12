@@ -5,10 +5,10 @@ console.log("linked!")
 // Click event - randomize both catergory button 
 // fetch movie API & test 
 
-var recipeKey = "5d9d9161103948ad9e6c3089d7430d7a";
+var recipeKey: "5d9d9161103948ad9e6c3089d7430d7a";
 
 // test JSON URL for pasta recipes:
-var url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=pasta"
+var url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=pasta"
 
 // cuisine URLS for recipe dropdown categories
 //https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=americancuisine
@@ -24,9 +24,9 @@ var url = "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d91611039
 
 
 // recipe search results appear on page 
-$("recipeSub").on("click", clickRecipes)
+$("#btnSubmit").on("click", clickRecipes)
 
-function clickRecipes(event) {
+functiion clickRecipes(event) {
     event.preventDefault()
     var recipe = $();
 }
