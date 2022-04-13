@@ -61,7 +61,7 @@
         <div class="meal">
 
             <!--Meal search box-->
-            <div class="search mealSearchBg">
+            <!-- <div class="search mealSearchBg">
                 <h2>Meal search</h2>
                 <div class="dropDownBox">
                     <input type="text" class="dropdown" placeholder="dropdown">
@@ -71,7 +71,32 @@
                     <button class="randomSearch">Randomly generate</button>
                     <button class="submitSearch">Submit</button>
                 </div>
-            </div>
+            </div> -->
+
+            <div class="search mealSearchBg">
+                <h2>Meal search</h2>
+            <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
+                <form id="search-form" class="form w-100px">
+                  <select id="format-input" class="form-input w-50" style="display:block">
+                    <option value="" disabled selected>Select a cuisine:</option>
+                    <option value="American">American</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="French">French</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                  </select>
+                  <!-- <button class="btn">Search</button> -->
+                </div>
+                  <div class="searchBtn">
+                    <button class="randomSearch">Randomly generate</button>
+                    <button class="submitSearch">Submit</button>
+                </form>
+              </div></div>
             
 
             <!--Meal result box-->
