@@ -42,7 +42,7 @@
     -ALTERNATIVELY-
     WHEN I hit the button at the bottom of the page
     THEN a random option for both the movie and meal is displayed from the listed
-        genres and cuisines, respectively.
+      genres and cuisines, respectively.
 
 ## Technologies Used 
 

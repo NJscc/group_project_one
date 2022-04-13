@@ -67,11 +67,13 @@ body {
     display: flex;
     width: 25%;
     border-radius: 10px;
+    border: solid black 3px;
 }
 
 /*Affects styling of both result boxes*/
 .result {
-    border: solid black;
+    border: solid black 3px;
+    border-radius: 10px;
     width: 70%;
     background: #F9C449;
 }
