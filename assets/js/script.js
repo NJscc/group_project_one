@@ -5,10 +5,9 @@ console.log("linked!")
 // Click event - randomize both catergory button 
 // fetch movie API & test 
 
-var recipeKey: "5d9d9161103948ad9e6c3089d7430d7a";
+var recipeKey = "5d9d9161103948ad9e6c3089d7430d7a";
 
 // test JSON URL for pasta recipes:
-var url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=pasta"
 
 // cuisine URLS for recipe dropdown categories
 //https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=americancuisine
@@ -24,13 +23,13 @@ var url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d916110394
 
 
 // recipe search results appear on page 
-$("#btnSubmit").on("click", clickRecipes)
+$(".submitSearch").on("click", clickRecipes);
 
 function clickRecipes(event) {
     event.preventDefault()
-    var recipe = $();
-}
-
-// ~~~ // 
-// movie dropdown list categories 
-// movie search results appear on page 
+    var recipe = $("format-input");
+    var recipesLink = "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d9161103948ad9e6c3089d7430d7a&query=";
+    fetch(recipesLink).then(function(response) {
+        return response.json()
+    }).then(function() {
+    })};
