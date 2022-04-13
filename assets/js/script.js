@@ -8,7 +8,7 @@ console.log("linked!")
 var recipeKey = "5d9d9161103948ad9e6c3089d7430d7a";
 
 // recipe search on click
-$(".recipeSearch").on("click", clickRecipes);
+$(".submitSearch").on("click", clickRecipes);
 
 function clickRecipes(event) {
     event.preventDefault()
