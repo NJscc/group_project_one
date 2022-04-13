@@ -1,15 +1,13 @@
-# group_project_one 
-"Reel Meal" webpage
+# "Reel Meal" webpage
 
-The first class group project.
 * Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
 ***DELETE NOTES IN PARENTHESES ONCE COMPLETE
 ***ENSURE ALL ITEMS IN SQUARE BRACKETS ARE FILLED OUT
 
-- Description -
+## Description 
 
-    - Overview - 
+ ### Overview  
 
     Our application is intended to help a user quickly plan
     anevening by giving them a movie and meal recipe option
@@ -17,13 +15,13 @@ The first class group project.
     single dropdown menu for each search, or by simply having the webpage
     randomly obtain an option from one or both search values. 
 
-    - User Story (AS/I WANT/SO THAT)- 
+### User Story 
 
     AS a user of the webpage
     I WANT to get a movie and meal recipe option
     SO THAT I can quickly plan out an evening without browsing various options
 
-    - Acceptance Criteria (GIVEN/WHEN/THEN)
+### Acceptance Criteria 
 
     GIVEN I open the wepage
     WHEN I select the movie dropdown box
@@ -46,17 +44,16 @@ The first class group project.
     THEN a random option for both the movie and meal is displayed from the listed
         genres and cuisines, respectively.
 
-- Technologies Used - (APIs, some functions?)
+## Technologies Used 
 
     For our data retrieval, we have used the Spoonacular API for
     our recipes, and the [MOVIE API] to retrieve our movie options.
-        - Spoonacular URL:
-        -[MOVIE API] URL:
+    We also used the CSS framework Materialize, jQuery, and google fonts.
     
-- Screenshot - 
+## Screenshot  
 
     [INSERT IMAGE OF COMPLETED WEBPAGE]
 
-- Link to Deployed Application - 
+## Link to Deployed Application  
 
-    [INSERT DEPLOYED LINK]
+    https://njscc.github.io/group_project_one/ 
