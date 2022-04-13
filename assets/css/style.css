@@ -133,6 +133,7 @@ h2 {
     font-family: sans-serif;
     font-size: 16pt;
     background-image: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
+    font-family: 'Cinzel', serif;
 }
 
 .randomSearch {
@@ -144,6 +145,7 @@ h2 {
     font-family: sans-serif;
     font-size: 14pt;
     background-image: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
+    font-family: 'Cinzel', serif;
 }
 
 .submitSearch:hover , .randomSearch:hover {
