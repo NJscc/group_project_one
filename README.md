@@ -1,5 +1,5 @@
 # group_project_one 
-"Reel Meal" wepage
+"Reel Meal" webpage
 
 The first class group project.
 * Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
