@@ -14,8 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Courgette&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
 </head>
          
@@ -24,9 +22,7 @@
     <main>
 
     <header>
-        <i class="fa-solid fa-video" id="icon"></i>
-        <h1 class="headerTile">Reel Meal Recommendation</h1>
-        <i class="fa-solid fa-utensils" id="icon"></i>
+        <h1>Reel Meal Recommendation</h1>
     </header>
           
         <!--Move search and results boxes-->
@@ -46,53 +42,74 @@
             <!--Movie result box-->
             <div class="result">
                 <div class="resultOne">
-                    <img id='movieImage' src="" alt="Placeholder for movie image.">
+                    <h3 class="title">Result</h3>
                     <div class="movieInfo">
-                        <h3 class="title">Result</h3>
-                        <p class="description">
-                            Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ratione cum nesciunt, dignissimos dicta odit
-                        </p>
+                        <img id='movieImage' src="" alt="Placeholder for movie image.">
+                        <p class="description">Description</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--Recipe/Meal search and results boxes-->
-        <div class="meal">
-
             <!--Meal search box-->
-            <div class="search">
+            <!-- <div class="search">
                 <h2>Meal search</h2>
                 <div class="dropDownBox">
                     <input type="text" class="dropdown" placeholder="dropdown">
-
                 </div>
                 <div class="searchBtn">
                     <button class="randomSearch">Randomly generate</button>
                     <button class="submitSearch">Submit</button>
                 </div>
-            </div>
+            </div> -->
+            <!-- <div class="meal"> -->
 
-            <!--Meal result box-->
+            <div class="search">
+                <h2>Meal search</h2>
+            <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
+                <form id="search-form" class="form w-100px">
+                  <select id="format-input" class="form-input w-50" style="display:block">
+                    <option value="" disabled selected>Select a cuisine:</option>
+                    <option value="American">American</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="French">French</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Mediterranean">Mediterranean</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                  </select>
+                  <!-- <button class="btn">Search</button> -->
+                </div>
+                  <div class="searchBtn">
+                    <button class="randomSearch">Randomly generate</button>
+                    <button class="submitSearch">Submit</button>
+                </form>
+              </div>
+
+              <!-- when lines below are commented out, meal search is not hidden-->
+              
+            <!-- Meal result box -->
             <div class="result">
                 <div class="resultOne">
-                    <img id='recipeImage' src="" alt="Placeholder for recipe image.">
+                    <h3 class="title">Result</h3>
                     <div class="mealInfo">
-                        <h3 class="title">Result</h3>
-                        <p class="description">
-                            Description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ratione cum nesciunt, dignissimos dicta odit
-                        </p>
+                        <img id='recipeImage' src="" alt="Placeholder for recipe image.">
+                        <p class="description">Description</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <button class="generateBtn">Not sure? Let us give you some ideas!</button>
+        <button class="generateBtn">Randomly generate both</button>
     
-
     </main>
 
     <!-- Compiled and minified JavaScript -  Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
