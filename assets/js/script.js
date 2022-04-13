@@ -33,7 +33,32 @@ function recipeChoices(selectedRecipe) {
         return response.json()
     }).then(function(data){ 
         console.log(data)
-})
-}
+
+})}
 // recipes appear on page 
 // randomize recipes
+
+
+$(".submitMovie").on("click", clickRecipes);
+
+function clickMovies(event) {
+    event.preventDefault()
+    var movies = $("#format-films").val();
+    console.log(movies)
+    var moviesLink = "" + movies
+    fetch(moviesLink).then(function(response) {
+        return response.json()
+    }).then(function(data) {
+        console.log(data)
+        console.log((data.results[0].title))
+        movieChoices((data.results[0].id))
+})};
+
+function movieChoices() {
+    var moviesLink = ""
+    fetch(moviesLink).then(function(response) {
+        return response.json()
+    }).then(function(data) {
+        console.log(data)
+        // 
+    })}
