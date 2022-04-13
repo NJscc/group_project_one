@@ -16,8 +16,8 @@ body {
 }
 
 .headerTile {
-    margin-left: 30px;
-    margin-right: 25px;
+    margin-left: 40px;
+    margin-right: 35px;
 }
 #icon {
     font-size: 90px;
@@ -37,10 +37,16 @@ body {
     justify-content: center;
     font-size: 28pt;
     border: solid black 2px;
-    background: wheat;
+    background: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
     text-align: center;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 4px 4px rgba(255,255,255,0.7);
 }
-
+.generateBtn:hover {
+    border-radius: 0 20px 0 20px;
+    transition: 0.6s;
+    background: #5b86e5;
+}
 /* class applies to div containing the movie search and result boxes */
 .movie {
     display: flex;
@@ -58,9 +64,9 @@ body {
 
 /*Affects styling of both search boxes*/
 .search {
-    background-color:wheat;
     display: flex;
-    width: 30%;
+    width: 25%;
+    border-radius: 10px;
 }
 
 /*Affects styling of both result boxes*/
@@ -99,6 +105,14 @@ h2 {
     margin: auto 5px;
 }
 
+.dropdown{
+    background-color: white;
+    font-weight: bold;
+}
+/*.dropdown:focus {
+    background: rgba(255,255,255,0.7);
+}*/
+
 /*Affects styling of element currently as placeholder for dropdown menu*/
 
 .searchBtn {
@@ -131,6 +145,12 @@ h2 {
     font-size: 14pt;
     background-image: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
 }
+
+.submitSearch:hover , .randomSearch:hover {
+    box-shadow: 2px 2px 2px 2px #e7f250;
+    transition: 0.5s;
+}
+
 
 /*formatting for search result boxes*/
 /*movieImage, recipeImage, h3, description class*/
