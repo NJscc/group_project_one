@@ -10,6 +10,11 @@ header {
     display: flex;
     justify-content: center;
 }
+
+body {
+    background: linear-gradient(to right,#43cea2,#5b86e5);
+}
+
 .headerTile {
     margin-left: 30px;
     margin-right: 25px;
@@ -62,7 +67,7 @@ header {
 .result {
     border: solid black;
     width: 70%;
-    background: wheat;
+    background: #F9C449;
 }
 
 .movieInfo, .mealInfo {
@@ -110,7 +115,10 @@ h2 {
     height: 45%;
     margin: 2% 15px;
     flex-grow: 1;
-
+    border-radius: 18px;
+    font-family: sans-serif;
+    font-size: 16pt;
+    background-image: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
 }
 
 .randomSearch {
@@ -118,7 +126,10 @@ h2 {
     height: 45%;
     margin: 2% 15px;
     flex-grow: 1;
-
+    border-radius: 18px;
+    font-family: sans-serif;
+    font-size: 14pt;
+    background-image: linear-gradient(to right, rgb(196, 243, 41), lightgreen);
 }
 
 /*formatting for search result boxes*/
@@ -166,4 +177,12 @@ h3 {
     justify-content: center;
     text-align: center;
     margin: 10px auto;
+}
+
+.movieSearchBg {
+    background: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701689289.jpg) center/cover;
+}
+
+.mealSearchBg {
+    background: url(https://i.pinimg.com/736x/fe/b0/32/feb032472adaa49c69e7848eefda4d7f--backgrounds-wallpapers-phone-backgrounds.jpg) center/cover;
 }
