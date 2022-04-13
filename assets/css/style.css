@@ -132,7 +132,7 @@ h2 {
     margin: 1% 1%;
 }
 
-.submitSearch {
+#submitRecipe, #submitMovie {
     width: 100%;
     height: 45%;
     margin: 2% 15px;
@@ -144,7 +144,7 @@ h2 {
     font-family: 'Cinzel', serif;
 }
 
-.randomSearch {
+#randomRecipe, #randomMovie {
     width: 100%;
     height: 45%;
     margin: 2% 15px;
