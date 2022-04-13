@@ -26,7 +26,7 @@ var url: "https://api.spoonacular.com/recipes/complexSearch?apiKey=5d9d916110394
 // recipe search results appear on page 
 $("#btnSubmit").on("click", clickRecipes)
 
-functiion clickRecipes(event) {
+function clickRecipes(event) {
     event.preventDefault()
     var recipe = $();
 }
