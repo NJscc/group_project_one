@@ -69,10 +69,10 @@
     
  ## Screenshot  
 
-    Image of webpage on page load.
+Image of webpage on page load.
 
-    !["Page when loaded."](./assets/images/pre-screenshot.png)
+!["Page when loaded."](./assets/images/pre-screenshot.png)
 
-    Image of webpage after user input.
-
-    !["Page with user input."](./assets/images/post_screenshot.png)
+Image of webpage after user input.
+   
+!["Page with user input."](./assets/images/post_screenshot.png)
