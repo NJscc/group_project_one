@@ -5,16 +5,18 @@ console.log("linked!")
 // Click event - randomize both catergory button
 // fetch movie API & test
 
+// API keys 
 var recipeKey = "404831a23c754a47a7662c3232089211";
 var movieKey = "";
 
 // recipe search on click
 $("#submitRecipe").on("click", clickRecipes);
 
+// display recipes 
 function renderResult(imageUrl, summary, title) {
+    $();
     var resultDivEl = $('.result');
     var resultOneDivEl = $('<div></div>');
-
     var imageEl = $('<img/>');
     var mealInfoDivEl = $('<div></div>');
     var titleEl = $('<h3></h3>');
@@ -29,17 +31,16 @@ function renderResult(imageUrl, summary, title) {
     mealInfoDivEl.addClass('mealInfo');
     titleEl.addClass('title')
     descriptionEl.addClass('description');
-
     mealInfoDivEl.append(titleEl)
     mealInfoDivEl.append(descriptionEl)
     resultOneDivEl.append(imageEl)
     resultOneDivEl.append(mealInfoDivEl)
-
     resultDivEl.append(resultOneDivEl);
 }
 
 renderResult('#', 'Description', 'title');
 
+// search recipes
 function clickRecipes(event) {
     event.preventDefault()
     var recipe = $("#format-input").val();
@@ -51,8 +52,19 @@ function clickRecipes(event) {
         console.log(data)
         console.log((data.results[0].title))
         recipeChoices((data.results[0].id))
-    })
-};
+    })};
+
+// generate a random recipe 
+function recipeRandom(event) {
+    event.preventDefault();
+    var recipesLink = `https://api.spoonacular.com/recipes/random?apiKey=${recipeKey}`;
+    fetch(recipesLink).then(function (response) {
+        return response.json()
+    }).then(function (data) {
+        console.log(data)
+        console.log((data.recipes[0].title))
+        recipeChoices((data.recipes[0].id))
+    })};
 
 function recipeChoices(selectedRecipe) {
     var recipesLink = `https://api.spoonacular.com/recipes/${selectedRecipe}/information?apiKey=${recipeKey}&includeNutrition=false`
@@ -63,21 +75,11 @@ function recipeChoices(selectedRecipe) {
     fetch(recipesLink).then(function (response) {
         return response.json()
     }).then(function (data) {
-
         renderResult(data.image, data.summary, data.title)
         console.log(data.title)
         console.log(data.image)
         console.log(data.summary)
-
-
-    })
-}
-
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-// }
-// recipes appear on page
-// randomize recipes
+})}
 
 
 $(".submitMovie").on("click", movieChoices);
