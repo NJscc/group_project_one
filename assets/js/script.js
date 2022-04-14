@@ -1,5 +1,7 @@
 // API keys
-var recipeKey = "404831a23c754a47a7662c3232089211";
+//var recipeKey = "404831a23c754a47a7662c3232089211";
+
+var recipeKey = "8fa7569950fe4d7697a320c202031818" ;
 var movieKey = "4be7ed153405ba5d49bb9853e69b1f03";
 
 // search functions on click
@@ -71,7 +73,7 @@ function renderMovieResult(imageUrl, summary, title) {
     resultDivEl.append(resultOneDivEl);
 }
 
-renderResult('', 'Please select your cuisine recipe category and click submit or random. Your result will appear here!', 'Result');
+renderResult('', 'Please select your cuisine recipe category and click submit or random. Your result will appear here!', 'Your Recipe');
 
 // search recipes on click
 function clickRecipes(event) {

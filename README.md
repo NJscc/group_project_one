@@ -1,10 +1,5 @@
 # "Reel Meal" webpage
 
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-***DELETE NOTES IN PARENTHESES ONCE COMPLETE
-***ENSURE ALL ITEMS IN SQUARE BRACKETS ARE FILLED OUT
-
 ## Description 
 
  ### Overview  
@@ -66,10 +61,18 @@
     the user could then be provided a link to order those options with a meal delivery
     service like DoorDash. 
 
-## Link to Deployed Application  
+## Link to Deployed Application and GitHub repository
 
     https://njscc.github.io/group_project_one/ 
-    
-## Screenshot  
 
-    [INSERT IMAGE OF COMPLETED WEBPAGE]
+    https://github.com/NJscc/group_project_one
+    
+ ## Screenshot  
+
+    Image of webpage on page load.
+
+    !["Page when loaded."](./assets/images/pre-screenshot.png)
+
+    Image of webpage after user input.
+
+    !["Page with user input."](./assets/images/post_screenshot.png)
