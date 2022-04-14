@@ -1,0 +1,249 @@
+header {
+    text-align: center;
+    background: lightblue;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: 'DM Serif Display', serif;
+    background: linear-gradient(120deg,#43cea2,#5b86e5);
+    text-shadow: 4px 2px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background: linear-gradient(to left,#ffd89b,#5b86e5);
+}
+
+.headerTile {
+    margin-left: 40px;
+    margin-right: 35px;
+}
+#icon {
+    font-size: 90px;
+    margin-top: 20px;
+}
+
+/*Button to randomly generate both search fields*/
+.generateBtn {
+    display: flex;
+    flex-grow: 1;
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+    min-height: 110px;
+    margin-top: 22px;
+    align-items: center;
+    justify-content: center;
+    font-size: 28pt;
+    border: solid black 2px;
+    background: linear-gradient(120deg,#43cea2,#5b86e5);
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 4px 4px 7px rgba(255,255,255,0.7);
+    font-family: 'Cinzel', serif;
+}
+.generateBtn:hover {
+    border-radius: 0 20px 0 20px;
+    transition: 0.6s;
+    background: #5b86e5;
+}
+/* class applies to div containing the movie search and result boxes */
+.movie {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-direction: row;
+}
+
+/* class applies to div containing the meal search and result boxes */
+.meal {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/*Affects styling of both search boxes*/
+.search {
+    display: flex;
+    width: 25%;
+    border-radius: 10px;
+    border: solid black 3px;
+}
+
+/*Affects styling of both result boxes*/
+.result, .movieResult {
+    border: solid black 3px;
+    border-radius: 10px;
+    width: 70%;
+    background: #F9C449;
+}
+
+.movieInfo, .mealInfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+#moveImgHolder {
+    display: flex;
+    width: 30%;
+}
+
+/*Affects search box titles*/
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 25pt;
+    margin: auto 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.title{
+    font-family: 'Courgette', cursive;
+    text-align: right;
+    margin-right: 50px;
+
+}
+
+.description {
+    font-family: 'Armata', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*affects styling of dropdown placeholder elements */
+.dropDownBox {
+    margin: auto 0;
+    width: 30%;
+    margin: auto 5px;
+}
+
+.dropdown{
+    background-color: white;
+    font-weight: bold;
+}
+
+/*Affects styling of the search buttons*/
+
+.searchBtn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 1% 1%;
+}
+
+#submitRecipe, #submitMovie {
+    width: 100%;
+    height: 45%;
+    margin: 2% 15px;
+    flex-grow: 1;
+    border-radius: 18px;
+    font-family: sans-serif;
+    font-size: 16pt;
+    background-image: linear-gradient(120deg,#43cea2,#5b86e5);
+    font-family: 'Cinzel', serif;
+}
+
+#randomRecipe, #randomMovie {
+    width: 100%;
+    height: 45%;
+    margin: 2% 15px;
+    flex-grow: 1;
+    border-radius: 18px;
+    font-family: sans-serif;
+    font-size: 14pt;
+    background-image: linear-gradient(120deg,#43cea2,#5b86e5);
+    font-family: 'Cinzel', serif;
+}
+
+.submitSearch:hover , .randomSearch:hover {
+    box-shadow: 2px 2px 2px 2px #e7f250;
+    transition: 0.5s;
+}
+
+
+/*formatting for search result boxes*/
+/*movieImage, recipeImage, h3, description class*/
+.resultOne {
+    display: flex;
+    flex-direction: row;
+}
+
+#movieImage, #recipeImage {
+    display: flex;
+    width: 30%;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+.mealInfo {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.description {
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.movieSearchBg {
+    background: #D6DBDF;
+}
+.mealSearchBg {
+    background: #D6DBDF;
+}
+
+/* aligns all boxes into a column on smaller screens */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+    }
+
+    .movie {
+        flex-direction: column;
+    }
+
+    .meal {
+        flex-direction: column;
+    }
+
+    .search {
+        margin-bottom: 10px;
+        min-height: 120px;
+    }
+
+    .search, .result, .movieResult {
+        width: 100%;
+    }
+
+    .generateBtn {
+        width: 90%;
+    }
+}
