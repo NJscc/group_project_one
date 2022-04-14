@@ -71,7 +71,7 @@ function renderMovieResult(imageUrl, summary, title) {
     resultDivEl.append(resultOneDivEl);
 }
 
-renderResult('#', 'Description', 'title');
+renderResult('', 'Please select your cuisine recipe category and click submit or random. Your result will appear here!', 'Result');
 
 // search recipes on click
 function clickRecipes(event) {
