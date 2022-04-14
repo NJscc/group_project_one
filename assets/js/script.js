@@ -80,3 +80,35 @@ function recipeChoices(selectedRecipe) {
 
 
 $(".submitMovie").on("click", movieChoices);
+// recipes appear on page 
+// randomize recipes
+// Movie API key: http://www.omdbapi.com/?i=tt3896198&apikey=a32a6988
+// Made to changes allow program to run
+
+$("#submitMovie").on("click", clickMovies);
+
+function clickMovies(event) {
+    event.preventDefault()
+    var randomId = Math.floor(1000000 + Math.random() * 900000)
+    // var movies = $("#format-films").val();
+    // console.log(movies)
+    var moviesLink = "http://www.omdbapi.com/?i=tt" + randomId + "&apikey=a32a6988"
+    fetch(moviesLink).then(function(response) {
+        return response.json()
+    }).then(function(data) {
+        console.log(data)
+        // console.log((data.results[0].title))
+})
+};
+
+// function movieChoices() {
+//     var moviesLink = "http://www.omdbapi.com/?i=tt3896198&apikey=a32a6988"
+//     fetch(moviesLink).then(function(response) {
+//         return response.json()
+//     }).then(function(data) {
+//         console.log(data)
+//         // 
+    // })}
+
+
+

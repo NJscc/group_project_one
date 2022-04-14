@@ -52,6 +52,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
+    flex-direction: row;
     /*background: wheat;*/
 }
 
@@ -59,6 +60,7 @@ body {
 .meal {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     /*background: wheat;*/
 }
 
@@ -215,4 +217,32 @@ h3 {
 
 .mealSearchBg {
     background: url(https://i.pinimg.com/736x/fe/b0/32/feb032472adaa49c69e7848eefda4d7f--backgrounds-wallpapers-phone-backgrounds.jpg) center/cover;
+}
+
+@media screen and (max-width: 768px) {
+    /*assuming header is clear, need to adjust search,result, possibly button? */
+    header {
+        flex-direction: column;
+    }
+
+    .movie {
+        flex-direction: column;
+    }
+
+    .meal {
+        flex-direction: column;
+    }
+
+    .search {
+        margin-bottom: 10px;
+        min-height: 120px;
+    }
+
+    .search, .result {
+        width: 100%;
+    }
+
+    .generateBtn {
+        width: 90%;
+    }
 }
