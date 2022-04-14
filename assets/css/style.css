@@ -54,7 +54,6 @@ body {
     justify-content: space-around;
     margin: 10px 0;
     flex-direction: row;
-    /*background: wheat;*/
 }
 
 /* class applies to div containing the meal search and result boxes */
@@ -62,7 +61,6 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    /*background: wheat;*/
 }
 
 /*Affects styling of both search boxes*/
@@ -84,7 +82,6 @@ body {
 .movieInfo, .mealInfo {
     display: flex;
     justify-content: space-around;
-
 }
 
 img {
@@ -132,11 +129,8 @@ h2 {
     background-color: white;
     font-weight: bold;
 }
-/*.dropdown:focus {
-    background: rgba(255,255,255,0.7);
-}*/
 
-/*Affects styling of element currently as placeholder for dropdown menu*/
+/*Affects styling of the search buttons*/
 
 .searchBtn {
     justify-content: center;
@@ -226,8 +220,8 @@ h3 {
     background: #D6DBDF;
 }
 
+/* aligns all boxes into a column on smaller screens */
 @media screen and (max-width: 900px) {
-    /*assuming header is clear, need to adjust search,result, possibly button? */
     header {
         flex-direction: column;
     }

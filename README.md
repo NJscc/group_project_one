@@ -1,30 +1,28 @@
-# "Reel Meal" webpage
+# Reel Meal Website
 
-## Description 
-
- ### Overview  
+ ## Overview  
 
     Our application is intended to help a user quickly plan
-    anevening by giving them a movie and meal recipe option
+    an evening by giving them a movie and meal recipe option
     based on either criteria that the user gives, in the form of a
     single dropdown menu for each search, or by simply having the webpage
     randomly obtain an option from one or both search values. 
 
-### User Story 
+## User Story 
 
     AS a user of the webpage
     I WANT to get a movie and meal recipe option
-    SO THAT I can quickly plan out an evening without browsing various options
+    SO THAT I can quickly plan out an evening without browsing various websites.
 
-### Acceptance Criteria 
+## Acceptance Criteria 
 
-    GIVEN I open the wepage
+    GIVEN I open the web page
     WHEN I select the movie dropdown box
-    THEN I see a list of lsited movie genres to select from
+    THEN I see a list of movie genres to select from
     WHEN I hit submit
     THEN a movie result is returned and shown in the result box
     WHEN I select the food drop down box
-    THEN I see a list of listedcuisines to choose from
+    THEN I see a list of cuisines to choose from
     WHEN I hit submit
     THEN a meal recipe from the cuisine of my choice is shown
 
@@ -42,8 +40,8 @@
 ## Technologies Used 
 
     For our data retrieval, we have used the Spoonacular API for
-    our recipes, and the [MOVIE API] to retrieve our movie options.
-    We also used the CSS framework Materialize, jQuery, and google fonts.
+    our recipes, and TheMovieDB API to retrieve our movie options.
+    We also used the CSS framework Materialize, jQuery, and Google fonts.
 
 ## Future Project Direction and Development
 
@@ -61,13 +59,13 @@
     the user could then be provided a link to order those options with a meal delivery
     service like DoorDash. 
 
-## Link to Deployed Application and GitHub repository
+## Links
 
-    https://njscc.github.io/group_project_one/ 
+  - Deployed: https://njscc.github.io/group_project_one/ 
 
-    https://github.com/NJscc/group_project_one
+   - GitHub: https://github.com/NJscc/group_project_one
     
- ## Screenshot  
+ ## Screenshots  
 
 Image of webpage on page load.
 
