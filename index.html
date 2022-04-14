@@ -35,24 +35,23 @@
             <div class="search movieSearchBg">
                 <h2>Movie search</h2>
                 <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
-                    <form id="search-form" class="form w-100px">
+                    <!-- <form id="search-form" class="form w-100px"> -->
                       <select id="format-films" class="form-input w-50" style="display:block">
                         <option value="" disabled selected>Select a Genre</option>
-                        <option value="Action">Action</option>
-                        <option value="Adventure">Adventure</option>
-                        <option value="Animation">Animation</option>
-                        <option value="Comedy">Comedy</option>
-                        <option value="Drama">Drama</option>
-                        <option value="Documentary">Documentary</option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Horror">Horror</option>
-                        <option value="Mystery">Mystery</option>
-                        <option value="Thriller">Thriller</option>
+                        <option value="28">Action</option>
+                        <option value="12">Adventure</option>
+                        <option value="16">Animation</option>
+                        <option value="35">Comedy</option>
+                        <option value="18">Drama</option>
+                        <option value="99">Documentary</option>
+                        <option value="14">Fantasy</option>
+                        <option value="27">Horror</option>
+                        <option value="9648">Mystery</option>
+                        <option value="53">Thriller</option>
                       </select>
                       <!-- <button class="btn">Search</button> -->
                     </div>
                 <div class="searchBtn">
-                    <!-- button classes changed - KP -->
                     <button id="randomMovie">Random Genre</button>
                     <button id="submitMovie">Submit</button>
                 </div>
@@ -63,8 +62,8 @@
                 <div class="resultOne">
                     <img id='movieImage' src="" alt="Placeholder for movie image.">
                     <div class="movieInfo">
-                        <h3 class="title">Result</h3>
-                        <p class="description">
+                        <!-- <h3 class="title">Result</h3>
+                        <p class="description"> -->
                             Please select your movie category and press submit or random. Your movie description will appear here!
                         </p>
                     </div>
@@ -116,22 +115,10 @@
 
             <!--Meal result box-->
             <div class="result">
-          
-
-                <div class="resultOne">
-                    <img id='recipeImage' src="" alt="Placeholder for recipe image.">
-                    <div class="mealInfo">
-                        <h3 class="title">Result</h3>
-                        <p class="description">
-                            Please select your meal category and press submit or random. Your recipe description will appear here!
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <!--Random button to generate a result from both fields at the bottom of the page-->
-        <button class="generateBtn">Not sure? Let us give you some ideas!</button>
+<br>
+        <!-- A FUNCTION IS TIED TO THE "UNSURE" ID - STYLE SHOULD BE ADDED TO THE ID -->
+        <button class="generateBtn" id="unsure">Not sure? Let us give you some ideas!</button>
     
 
     </main>
