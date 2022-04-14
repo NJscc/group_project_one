@@ -78,7 +78,7 @@ function clickRecipes(event) {
     event.preventDefault()
     var recipe = $("#format-input").val();
     console.log(recipe)
-    var recipesLink = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${recipeKey}&query=${recipe}`
+    var recipesLink = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${recipeKey}&query=${recipe}&number=1`
     fetch(recipesLink).then(function (response) {
         return response.json()
     }).then(function (data) {
@@ -91,7 +91,7 @@ function clickRecipes(event) {
 // generate a random recipe
 function recipeRandom(event) {
     event.preventDefault();
-    var recipesLink = `https://api.spoonacular.com/recipes/random?apiKey=${recipeKey}`;
+    var recipesLink = `https://api.spoonacular.com/recipes/random?apiKey=${recipeKey}&number=1`;
     fetch(recipesLink).then(function (response) {
         return response.json()
     }).then(function (data) {
