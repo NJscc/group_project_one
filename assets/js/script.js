@@ -4,7 +4,6 @@ var movieKey = "4be7ed153405ba5d49bb9853e69b1f03";
 
 // recipe search on click
 $("#submitRecipe").on("click", clickRecipes);
-$("#submitMovie").on("click", clickMovies);
 
 // movie search on click 
 // display movie selected
@@ -12,9 +11,9 @@ $("#submitMovie").on("click", clickMovies);
 // display random movie AND recipe 
 
 
-// display recipes 
+// display recipes on page
 function renderResult(imageUrl, summary, title) {
-    $();
+    $('.meal .resultOne').remove();
     var resultDivEl = $('.result');
     var resultOneDivEl = $('<div></div>');
     var imageEl = $('<img/>');
@@ -38,7 +37,7 @@ function renderResult(imageUrl, summary, title) {
 
 renderResult('#', 'Description', 'title');
 
-// search recipes
+// search recipes on click
 function clickRecipes(event) {
     event.preventDefault()
     var recipe = $("#format-input").val();
@@ -64,6 +63,7 @@ function recipeRandom(event) {
         recipeChoices((data.recipes[0].id))
     })};
 
+// generate selected recipe
 function recipeChoices(selectedRecipe) {
     var recipesLink = `https://api.spoonacular.com/recipes/${selectedRecipe}/information?apiKey=${recipeKey}&includeNutrition=false`
     // from recipe list that is returned - pick one
@@ -80,27 +80,59 @@ function recipeChoices(selectedRecipe) {
 })}
 
 
-$(".submitMovie").on("click", movieChoices);
-// recipes appear on page 
-// randomize recipes
-// Movie API key: http://www.omdbapi.com/?i=tt3896198&apikey=a32a6988
-// Made to changes allow program to run
+// $(".submitMovie").on("click", movieChoices);
+// // recipes appear on page 
+// // randomize recipes
+// // Movie API key: http://www.omdbapi.com/?i=tt3896198&apikey=a32a6988
+// // Made to changes allow program to run
 
 $("#submitMovie").on("click", clickMovies);
 
 function clickMovies(event) {
-    event.preventDefault()
-    var randomId = Math.floor(1000000 + Math.random() * 900000)
-    // var movies = $("#format-films").val();
-    // console.log(movies)
-    var moviesLink = "http://www.omdbapi.com/?i=tt" + randomId + "&apikey=a32a6988"
+    event.preventDefault();
+    var genre = $("#format-films").val();
+    console.log(genre);
+    var moviesLink = `https://api.themoviedb.org/3/discover/movie?api_key=${movieKey}&with_genres=${genre}` 
+    console.log(moviesLink)
     fetch(moviesLink).then(function(response) {
         return response.json()
     }).then(function(data) {
         console.log(data)
-        // console.log((data.results[0].title))
-})
-};
+        console.log((data.results[0].title))
+        movieChoices((data.results[0].id))
+    })};
+
+    function movieChoices(movieId) {
+        var moviesLink = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${movieKey}`;
+        console.log(moviesLink);
+    // from recipe list that is returned - pick one 
+    // find on the API site how to search for 1 recipe and use the selected recipe to perform the search 
+    // with the data, console log, identify what we want 
+    // list the information on the page 
+        fetch(moviesLink).then(function(response) {
+            return response.json()
+        }).then(function(data){ 
+           console.log(data);
+           let imageUrl = 'https://image.tmdb.org/t/p/w500' + data.poster_path;
+            renderMovieResult(imageUrl,data.overview,data.title)
+            console.log(data.title)
+            console.log(data.image)
+            console.log(data.summary)
+    })}
+
+// function clickMovies(event) {
+//     event.preventDefault()
+//     var randomId = Math.floor(1000000 + Math.random() * 900000)
+//     // var movies = $("#format-films").val();
+//     // console.log(movies)
+//     var moviesLink = "http://www.omdbapi.com/?i=tt" + randomId + "&apikey=a32a6988"
+//     fetch(moviesLink).then(function(response) {
+//         return response.json()
+//     }).then(function(data) {
+//         console.log(data)
+//         // console.log((data.results[0].title))
+// })
+// };
 
 // function movieChoices() {
 //     var moviesLink = "http://www.omdbapi.com/?i=tt3896198&apikey=a32a6988"
