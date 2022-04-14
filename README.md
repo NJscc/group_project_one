@@ -59,11 +59,11 @@
     the user could then be provided a link to order those options with a meal delivery
     service like DoorDash. 
 
-## Link to Deployed Application and GitHub repository
+## Links
 
-    https://njscc.github.io/group_project_one/ 
+  - Deployed: https://njscc.github.io/group_project_one/ 
 
-    https://github.com/NJscc/group_project_one
+   - GitHub: https://github.com/NJscc/group_project_one
     
  ## Screenshots  
 
