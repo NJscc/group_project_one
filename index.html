@@ -1,134 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Project One</title>
-     <!-- Compiled and minified CSS - Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Reel Meal</title>
-     <!-- Compiled and minified CSS - Materialize-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Armata&family=Cinzel:wght@700&family=Courgette&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Group Project One</title>
+        <!-- Compiled and minified CSS - Materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>Reel Meal</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Armata&family=Cinzel:wght@700&family=Courgette&family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 
-</head>
-         
+    </head>
 
-<body>
-    <main>
 
-    <header>
-        <i class="fa-solid fa-video" id="icon"></i>
-        <h1 class="headerTile">Reel Meal Recommendation</h1>
-        <i class="fa-solid fa-utensils" id="icon"></i>
-    </header>
-          
-        <!--Move search and results boxes-->
-        <div class="movie">
-             <!--Movie search box-->
-            <div class="search movieSearchBg">
-                <h2>Movie search</h2>
-                <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
-                    <!-- <form id="search-form" class="form w-100px"> -->
-                      <select id="format-films" class="form-input w-50" style="display:block">
-                        <option value="" disabled selected>Select a Genre</option>
-                        <option value="28">Action</option>
-                        <option value="12">Adventure</option>
-                        <option value="16">Animation</option>
-                        <option value="35">Comedy</option>
-                        <option value="18">Drama</option>
-                        <option value="99">Documentary</option>
-                        <option value="14">Fantasy</option>
-                        <option value="27">Horror</option>
-                        <option value="9648">Mystery</option>
-                        <option value="53">Thriller</option>
-                      </select>
-                      <!-- <button class="btn">Search</button> -->
+    <body>
+        <main>
+
+            <header>
+                <i class="fa-solid fa-video" id="icon"></i>
+                <h1 class="headerTile">Reel Meal Recommendation</h1>
+                <i class="fa-solid fa-utensils" id="icon"></i>
+            </header>
+
+            <!--Move search and results boxes-->
+            <div
+                class="movie">
+                <!--Movie search box-->
+                <div class="search movieSearchBg">
+                    <h2>Movie search</h2>
+                    <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
+                        <select id="format-films" class="form-input w-50" style="display:block">
+                            <option value="" disabled selected>Select a Genre</option>
+                            <option value="28">Action</option>
+                            <option value="12">Adventure</option>
+                            <option value="16">Animation</option>
+                            <option value="35">Comedy</option>
+                            <option value="18">Drama</option>
+                            <option value="99">Documentary</option>
+                            <option value="14">Fantasy</option>
+                            <option value="27">Horror</option>
+                            <option value="9648">Mystery</option>
+                            <option value="53">Thriller</option>
+                        </select>
                     </div>
-                <div class="searchBtn">
-                    <button id="randomMovie">Random Genre</button>
-                    <button id="submitMovie">Submit</button>
+                    <div class="searchBtn">
+                        <button id="randomMovie">Random Genre</button>
+                        <button id="submitMovie">Submit</button>
+                    </div>
                 </div>
-            </div>
 
-            <!--Movie result box-->
-            <div class="movieResult">
-                <div class="resultOne">
-                    <img id='movieImage' src="" alt="">
-                    <div class="movieInfo">
-                        <h3 class="title">Your Movie Title</h3>
-                        <p class="description">
-                            Please select your movie category and press submit or random. Your movie description will appear here!
-                        </p>
+                <!--Movie result box-->
+                <div class="movieResult">
+                    <div class="resultOne">
+                        <img id='movieImage' src="" alt="">
+                        <div class="movieInfo">
+                            <h3 class="title">Your Movie Title</h3>
+                            <p class="description">
+                                Please select your movie category and press submit or random. Your movie description will appear here!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!--Recipe/Meal search and results boxes-->
-        <div class="meal">
+            <!--Recipe/Meal search and results boxes-->
+            <div class="meal">
 
-            <!--Meal search box-->
-            <!-- <div class="search mealSearchBg">
-                <h2>Meal search</h2>
-                <div class="dropDownBox">
-                    <input type="text" class="dropdown" placeholder="dropdown">
+                <div class="search mealSearchBg">
+                    <h2>Recipe search</h2>
+                    <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
+                        <form id="search-form" class="form w-100px">
+                            <select id="format-input" class="form-input w-50" style="display:block">
+                                <option value="" disabled selected>Select a Cuisine:</option>
+                                <option value="American">American</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="French">French</option>
+                                <option value="Indian">Indian</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Mexican">Mexican</option>
+                                <option value="Mediterranean">Mediterranean</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Thai">Thai</option>
+                                <option value="Vietnamese">Vietnamese</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="searchBtn">
+                        <button id="randomRecipe">Random Cuisine</button>
+                        <button id="submitRecipe">Submit</button>
+                    </div>
+                </div>
 
-                </div>
-                <div class="searchBtn">
-                    <button class="randomSearch">Random</button>
-                    <button class="submitSearch">Submit</button>
-                </div>
-            </div> -->
 
-            <div class="search mealSearchBg">
-                <h2>Recipe search</h2>
-                <div class=" dropDownBox col-12 col-md-9 flex-column align-left bg-light p-3">
-                    <form id="search-form" class="form w-100px">
-                    <select id="format-input" class="form-input w-50" style="display:block">
-                    <option value="" disabled selected>Select a Cuisine:</option>
-                    <option value="American">American</option>
-                    <option value="Chinese">Chinese</option>
-                    <option value="French">French</option>
-                    <option value="Indian">Indian</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Mexican">Mexican</option>
-                    <option value="Mediterranean">Mediterranean</option>
-                    <option value="Spanish">Spanish</option>
-                    <option value="Thai">Thai</option>
-                    <option value="Vietnamese">Vietnamese</option>
-                    </select>
-                    </form>
-                     <!-- <button class="btn">Search</button> -->
-                </div>
-                <div class="searchBtn">
-                    <button id="randomRecipe">Random Cuisine</button>
-                    <button id="submitRecipe">Submit</button>
-                <!--</form>-->
-                </div>
+                <!--Meal result box-->
+                <div class="result"></div>
             </div>
-            
+            <br>
+            <!-- Button to select a movie and recipe randomly at the same time -->
+            <button class="generateBtn" id="unsure">Not sure? Let us give you some ideas!</button>
 
-            <!--Meal result box-->
-            <div class="result">
-            </div>
-        </div>
-<br>
-        <!-- A FUNCTION IS TIED TO THE "UNSURE" ID - STYLE SHOULD BE ADDED TO THE ID -->
-        <button class="generateBtn" id="unsure">Not sure? Let us give you some ideas!</button>
-    
 
-    </main>
+        </main>
 
-    <!-- Compiled and minified JavaScript -  Materialize-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-</body>
+        <!-- Compiled and minified JavaScript - jQuery - Materialize-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
