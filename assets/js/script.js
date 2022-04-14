@@ -1,16 +1,15 @@
-console.log("linked!")
-
-// Click event - movie submit button
-// Click event - recipe submit button
-// Click event - randomize both catergory button
-// fetch movie API & test
-
 // API keys 
 var recipeKey = "404831a23c754a47a7662c3232089211";
 var movieKey = "";
 
 // recipe search on click
 $("#submitRecipe").on("click", clickRecipes);
+
+// movie search on click 
+// display movie selected
+// display random movie 
+// display random movie AND recipe 
+
 
 // display recipes 
 function renderResult(imageUrl, summary, title) {
@@ -21,8 +20,7 @@ function renderResult(imageUrl, summary, title) {
     var mealInfoDivEl = $('<div></div>');
     var titleEl = $('<h3></h3>');
     var descriptionEl = $('<p></p>');
-
-    // imageEl.src = data.image
+    
     imageEl.attr('src', imageUrl)
     imageEl.attr('id', "recipeImage")
     titleEl.text(title)
@@ -95,8 +93,7 @@ function clickMovies(event) {
         console.log(data)
         console.log((data.results[0].title))
         movieChoices((data.results[0].id))
-    })
-};
+    })};
 
 function movieChoices() {
     var moviesLink = ""
@@ -105,5 +102,4 @@ function movieChoices() {
     }).then(function (data) {
         console.log(data)
         //
-    })
-}
+    })}
