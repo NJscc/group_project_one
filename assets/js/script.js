@@ -1,9 +1,10 @@
 // API keys 
 var recipeKey = "404831a23c754a47a7662c3232089211";
-var movieKey = "";
+var movieKey = "4be7ed153405ba5d49bb9853e69b1f03";
 
 // recipe search on click
 $("#submitRecipe").on("click", clickRecipes);
+$("#submitMovie").on("click", clickMovies);
 
 // movie search on click 
 // display movie selected
