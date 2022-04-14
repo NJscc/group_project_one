@@ -49,11 +49,27 @@
     For our data retrieval, we have used the Spoonacular API for
     our recipes, and the [MOVIE API] to retrieve our movie options.
     We also used the CSS framework Materialize, jQuery, and google fonts.
-    
-## Screenshot  
 
-    [INSERT IMAGE OF COMPLETED WEBPAGE]
+## Future Project Direction and Development
+
+    To build on this project in the future, we could have the movie 
+    search box display multiple movie results at a time. In addition,
+    we would probably give a link to the user, to open a movie 
+    search option within the movie streaming service for that movie,
+    such as Netflix or Disney+ . 
+    
+    To develop the recipe search options, future development could include
+    deisplaying multiple recipe options at once, as well as giving the user a list
+    of ingredients for those recipe options. A further step may be to give the
+    user store locations where those ingredients could be purchased. Alternatively,
+    the recipe results could be replaced with meal results from local restaurants, and
+    the user could then be provided a link to order those options with a meal delivery
+    service like DoorDash. 
 
 ## Link to Deployed Application  
 
     https://njscc.github.io/group_project_one/ 
+    
+## Screenshot  
+
+    [INSERT IMAGE OF COMPLETED WEBPAGE]
